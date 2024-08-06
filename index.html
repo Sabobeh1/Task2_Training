@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -27,6 +27,19 @@
         <div class="item-list">
         </div>
         <button type="button" class="btn" id="clear-list">Clear Items</button>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="editForm">
+                <h3 class="text-center">Edit Item</h3>
+                <div class="input-group">
+                    <input type="text" id="editInput" placeholder="Edit your todo item">
+                    <button type="submit" class="btn">Edit Item</button>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
